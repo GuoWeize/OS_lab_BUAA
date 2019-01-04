@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="boot">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="init">
+      <UniqueIdentifier>{56a63095-08ce-42d7-a0c0-5e84e4d4bab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{5d9918ee-af95-433e-b9d7-c5360e317883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{d1df5018-3b16-4be4-948a-18c02e83ad7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers/gxconsole">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\asm">
+      <UniqueIdentifier>{dfadbf34-75e9-45e6-9cd0-5912c3d646ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mm">
+      <UniqueIdentifier>{e2e8156b-618f-46b5-8a48-5a816098448b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="start.S">
+      <Filter>boot</Filter>
+    </None>
+    <None Include="getc.S">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="kclock_asm.S">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="tlb_asm.S">
+      <Filter>mm</Filter>
+    </None>
+    <None Include="scse0_3.lds">
+      <Filter>tools</Filter>
+    </None>
+    <None Include="env_ams.S">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="genex.S">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="syscall.S">
+      <Filter>lib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="env.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="console.c">
+      <Filter>drivers/gxconsole</Filter>
+    </ClCompile>
+    <ClCompile Include="code_a.c">
+      <Filter>init</Filter>
+    </ClCompile>
+    <ClCompile Include="code_b.c">
+      <Filter>init</Filter>
+    </ClCompile>
+    <ClCompile Include="init.c">
+      <Filter>init</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>init</Filter>
+    </ClCompile>
+    <ClCompile Include="kclock.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel_elfloader.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="print.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="printf.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="sched.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="syscall_all.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="traps.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="pmap.c">
+      <Filter>mm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dev_cons.h">
+      <Filter>drivers/gxconsole</Filter>
+    </ClInclude>
+    <ClInclude Include="args.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="env.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="error.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="fs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="kclock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="kerelf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mmu.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="printf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="print.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="sched.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="stackframe.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="trap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="unistd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="pmap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="queue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="asm.h">
+      <Filter>include\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="regdef.h">
+      <Filter>include\asm</Filter>
+    </ClInclude>
+    <ClInclude Include="cp0regdef.h">
+      <Filter>include\asm</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
